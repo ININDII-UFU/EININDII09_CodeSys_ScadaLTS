@@ -18,247 +18,184 @@ A cada um(a), nosso agradecimento pelo compromisso, pela parceria e pela qualida
 
 ---
 
-## 📑 Índice
-- [1. Instalação do OpenJDK](#1-instalação-do-openjdk)
-- [2. Instalação do SCADA‑LTS](#2-instalação-do-scada-lts)
-- [3. Acesso ao SCADA‑LTS (Service Manager)](#3-acesso-ao-scada-lts-service-manager)
-- [4. MODBUS Server — CODESYS](#4-modbus-server--codesys)
-- [5. MODBUS Client — SCADA‑LTS](#5-modbus-client--scada-lts)
+<details open>
+  <summary><strong>📑 Índice</strong></summary>
+
+- Instalação do OpenJDK  
+- Instalação do SCADA‑LTS  
+- Acesso ao SCADA‑LTS (Service Manager)  
+- MODBUS Server — CODESYS  
+- MODBUS Client — SCADA‑LTS  
+
+</details>
 
 ---
 
-## 1. Instalação do OpenJDK
+<details open>
+  <summary><strong>☕ 1. Instalação do OpenJDK</strong></summary>
 
 Para realizar a instalação do OpenJDK, utilize o link oficial (Microsoft Build of OpenJDK):  
 🔗 **Download:** https://aka.ms/download-jdk/microsoft
 
-O **OpenJDK (Java Development Kit)** fornece compilador, JVM e bibliotecas padrão para desenvolvimento/execução de aplicações Java — base usada amplamente em academia e indústria.
+O **OpenJDK (Java Development Kit)** fornece compilador, JVM e bibliotecas padrão para desenvolvimento/execução de aplicações Java.
 
-1. **Baixe e execute** o instalador do OpenJDK. 
-
-   ![Figura 1 — Instalador do OpenJDK](img/image1.png)
+1. **Baixe e execute** o instalador do OpenJDK.  
+![Figura 1 — Instalador do OpenJDK](img/image1.png)
 
 2. **Aceite os termos de licença.**  
+![Figura 2 — Aceite dos termos de licença](img/image2.png)
 
-   ![Figura 2 — Aceite dos termos de licença](img/image2.png)
+3. Na tela de customização, ative **“Set JAVA_HOME variable”**.  
+![Figura 3 — Customização e JAVA_HOME](img/image3.png)
 
-3. Na tela de customização, ative **“Set JAVA_HOME variable”** → *Will be installed on local hard drive* → **Next** → **Install**.  
+4. Clique em **Install**.  
+![Figura 4 — Pronto para instalar](img/image4.png)
 
-   ![Figura 3 — Customização e JAVA_HOME](img/image3.png)
+5. Edite as variáveis de ambiente do sistema.  
+![Figura 5 — Variáveis de ambiente](img/image5.png)
 
-4. Ao clicar next, uma nova tela se abrirá e click **Install**, é possivel que vc tenha que aceitar rodar como Administrator.  
+6. Em **Path**, adicione o diretório do JDK.  
+![Figura 6 — Path](img/image6.png)
 
-   ![Figura 4 — Pronto para Instalar](img/image4.png)
+7. Confirme o caminho do JDK.  
+![Figura 7 — Diretório JDK](img/image7.png)
 
-5. Ao finalizar, **edite o PATH/JAVA_HOME**:
+8. Confirme **JAVA_HOME**.  
+![Figura 8 — JAVA_HOME](img/image8.png)
 
-      1. Clique no **Iniciar** e digite: **variáveis de ambiente**.
-      2. Abra **“Editar as variáveis de ambiente do sistema”**.
-      3. Na janela **Propriedades do Sistema**, aba **Avançado**, clique em **Variáveis de Ambiente…**.
+9. Valide no Prompt:
+```bat
+java -version
+```
+![Figura 9 — java -version](img/image9.png)
 
-   ![Figura 5 — Edição de variáveis de ambiente (Sistema)](img/image5.png)
-
-6. Em **Variáveis do Sistema** → selecione **Path** → **Editar**.  
-
-   ![Figura 6 — Variáveis de Ambiente (Path)](img/image6.png)
-
-7. Encontre a pasta de instalação do OpenJDK (ex.:  
-   `C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot` ou `C:\Program Files\Java\...`).  
-   Clique em **Novo** → **cole o caminho completo da pasta do JDK** (inclua a pasta com o nome do JDK).  
-
-   ![Figura 7 — Edição do Path com diretório do JDK](img/image7.png)
-
-8. Confirme que **JAVA_HOME** aponta para a pasta do JDK e salve (**OK** nas janelas).
- 
-   ![Figura 8 — Variável JAVA_HOME definida](img/image8.png)
-
-9. Valide a instalação no **Prompt de Comando**:
-   ```bat
-   java -version
-   ```
-   A saída deve exibir a versão do Java instalada.  
-   ![Figura 9 — Prompt com `java -version`](img/image9.png)
+</details>
 
 ---
 
-## 2. Instalação do SCADA‑LTS
+<details open>
+  <summary><strong>🖥️ 2. Instalação do SCADA‑LTS</strong></summary>
 
-Baixe o instalador **.exe** do SCADA‑LTS:  
-🔗 **Releases Windows:** https://github.com/SCADA-LTS/windows-installer/releases  
-> O roteiro utilizou a versão **v2.1.0**, mas versões mais novas podem ser usadas.
+Baixe o instalador:
+🔗 https://github.com/SCADA-LTS/windows-installer/releases
 
-1. Após o download, o Windows pode exibir aviso de segurança. Selecione **“Mais informações”** → **“Executar assim mesmo”**.  
-   ![Figura 10 — Aviso de segurança do Windows](img/image10.png)
+![Figura 10 — Aviso de segurança](img/image10.png)
 
-> 💡 **Importante:** O instalador pode ser marcado como ameaça pelo **antivírus**, mesmo sem risco real. Após o download, abra o arquivo e, se a tela de segurança aparecer, clique em **Mais informações**.
+Clique em **Mais informações → Executar assim mesmo**.
 
-   ![Figura 11 — Seleção de idioma no instalador do SCADA‑LTS](img/image11.png)
+![Figura 11 — Idioma](img/image11.png)
+![Figura 12 — Executar](img/image12.png)
 
-> Em seguida basta clicar em **Executar assim mesmo**.
-   
-   ![Figura 12 — Seleção de idioma no instalador do SCADA‑LTS](img/image12.png)
+Selecione o idioma.
+![Figura 13 — Idioma](img/image13.png)
 
-2. Selecione o **idioma**.  
+Avance no assistente.
+![Figura 14 — Assistente](img/image14.png)
 
-   ![Figura 13 — Seleção de idioma no instalador do SCADA‑LTS](img/image13.png)
+Aceite o contrato.
+![Figura 15 — Licença](img/image15.png)
 
-3. **Avançar** no assistente.  
+Escolha o diretório.
+![Figura 16 — Diretório](img/image16.png)
 
-   ![Figura 14 — Assistente do instalador](img/image14.png)
+Avance com padrões.
+![Figura 17](img/image17.png)
+![Figura 18](img/image18.png)
 
-4. **Aceite** o **Acordo de Licença**.  
+Configure porta, usuário e senha.
+![Figura 19 — Porta HTTP](img/image19.png)
 
-   ![Figura 15 — Aceite do Acordo de Licença](img/image15.png)
+⚠️ **Marque instalar servidor local**
+![Figura 20 — Servidor local](img/image20.png)
 
-5. Escolha/aceite o **Local de Destino** → **Avançar**.  
+Finalize.
+![Figura 21](img/image21.png)
+![Figura 22](img/image22.png)
 
-   ![Figura 16 — Seleção do diretório de instalação](img/image16.png)
-
-6. **Avance** nas telas seguintes com as opções padrão.  
-
-   ![Figura 17 — Parâmetros padrão (1/2)](img/image17.png)  
-   ![Figura 18 — Parâmetros padrão (2/2)](img/image18.png)
-
-7. Configure a **Porta HTTP** (padrão **8080**; escolha outra se já estiver em uso), **Nome de Usuário** e **Senha**.  
-
-   ![Figura 19 — Configuração de Porta HTTP e credenciais](img/image19.png)
-
-8. Marque **“Instalar servidor local”** → **Avançar** → **Instalar**.  
-
-   > **ALERTA:** Este passo é VITAL, se você esquecer do mesmo terá que instalar novamente.
-
-   ![Figura 20 — Instalação do servidor local](img/image20.png)
-
-   ![Figura 21 — Conclusão da instalação](img/image21.png)
-
-9. **Concluir** para finalizar.  
-
-   ![Figura 22 — Conclusão da instalação](img/image22.png)
+</details>
 
 ---
 
-## 3. Acesso ao SCADA‑LTS (Service Manager)
+<details open>
+  <summary><strong>🌐 3. Acesso ao SCADA‑LTS (Service Manager)</strong></summary>
 
 Abra no navegador:
 ```
 http://localhost:8080/Scada-LTS/
 ```
-> Se alterou a porta HTTP, substitua `8080` pela porta escolhida.
 
-Caso não abra, use o **Scada‑LTS Service Manager**: defina **Startup Type = Automatic**, clique **Start** e **OK**. 
+Caso não abra, utilize o **Scada‑LTS Service Manager**:
 
-![Figura 23 — Scada‑LTS Service Manager](img/image23.png)
+1. Defina **Startup Type = Automatic**
+2. Clique em **Start**
+3. Clique em **OK**
 
----
+![Figura 23 — Service Manager](img/image23.png)
 
-## 4. MODBUS Server — CODESYS
-
-Nesta etapa, o **CODESYS** será configurado como **servidor Modbus TCP**, que enviará dados de processo para o supervisório.
-
-1. **Crie um projeto**: `Novo projeto`.  
-
-   ![Figura 24 — Novo projeto no CODESYS](img/image24.png)
-
-2. **Nome e diretório** → **OK**.  
-
-   ![Figura 25 — Nome e pasta do projeto](img/image25.png)
-
-3. Selecione o dispositivo **CODESYS Control Win V3 x64** (CLP virtual) e a linguagem (recomenda‑se **LD** ou **ST** para `PLC_PRG`). **OK**.  
-
-   ![Figura 26 — Seleção do dispositivo e linguagem](img/image26.png)
-
-4. Na árvore do projeto, clique direito em **Device (CODESYS Control Win V3 x64)** → **Adicionar dispositivo...**  
-
-   ![Figura 27 — Adicionar dispositivo](img/image27.png)
-
-5. Em **Adicionar dispositivo**: **Barramentos de campo** → **Adaptador Ethernet** → **Ethernet** → **Adicionar dispositivo**.  
-
-   ![Figura 28 — Inclusão do Adaptador Ethernet](img/image28.png)
-
-6. Ainda em **Adicionar dispositivo**, selecione **Ethernet** (adicionado) → **Modbus** → **ModbusTCP Server Device** → **Adicionar dispositivo**.  
-
-   ![Figura 29 — Inclusão do ModbusTCP Server Device](img/image29.png)
-
-7. Confirme que **Ethernet** e **ModbusTCP Server** aparecem na árvore.  
-
-   ![Figura 30 — Árvore do projeto com Ethernet + ModbusTCP Server](img/image30.png)
-
-8. **Ligue o CLP** (CODESYS Control Win x64): na *system tray* do Windows, **CODESYS Gateway Systray – x64**, clique direito → **Start PLC**. Depois, em **Device**, clique **Escanear rede**.  
-   ![Figura 27 — Start PLC no Gateway Systray](img/image31.png)  
-   ![Figura 28 — Dispositivo encontrado no Scan de rede](img/image32.png)
-
-9. Na **primeira vez**, crie **usuário/senha** do CLP (depois reaproveite o login).  
-   ![Figura 29 — Criação/Login de usuário do CODESYS Control](img/image33.png)
-
-10. Configure o **Adaptador Ethernet**: em **Ethernet (Ethernet)** → **Geral** → **Interface de rede** → **Pesquisar...** → selecione a interface **Wi‑Fi** → **OK**.  
-    ![Figura 30 — Seleção da interface de rede Wi‑Fi](img/image34.png)
-
-11. Configure o **Servidor Modbus**: **Porta = 502**.  
-    - **Holding Registers** (Registros de retenção) e **Input Registers** (Registros de entrada): informe **quantidade de registros** (palavras de 16 bits) conforme a necessidade (padrão 10 cada, se suficiente).  
-    - **Coils** e **Input Status** (variáveis discretas): informe a **quantidade de bits** (ex.: 8 → 1 byte).  
-    ![Figura 31 — Parâmetros do ModbusTCP Server](img/image35.png)
-
-12. Em **Modbus TCP Server Device — Mapeamento de E/S** (*não* defina nomes nas variáveis automaticamente, para poder mapear bits/bytes):  
-    - Entradas (Holding Registers):  
-      `Entradas[0] = DP_MV_FIC100A`, `Entradas[1] = DP_SP_FIC100A`  
-    - Saídas (Input Register):  
-      `Saídas[0] = DP_PV_FIC100A`  
-    - Bobinas (Coils):  
-      `Bobinas[0] = DP_AM_FIC100A`, `Bobinas[1] = DP_LR_FIC100A`  
-    - Habilite **Sempre atualizar variáveis / Utilizar tarefa do ciclo de barramento...**  
-    ![Figura 32 — Mapeamento de E/S Modbus](img/image36.png)
-
-13. **Download** para a CPU: `ALT + F8`. O servidor ficará ativo e pronto para clientes como o SCADA‑LTS.  
-    ![Figura 33 — Download para a CPU](img/image37.png)  
-    ![Figura 34 — Diagnóstico online do servidor Modbus](img/image38.png)
+</details>
 
 ---
 
-## 5. MODBUS Client — SCADA‑LTS
+<details open>
+  <summary><strong>📡 4. MODBUS Server — CODESYS</strong></summary>
 
-No SCADA‑LTS, configure o **Data Source** do tipo **Modbus IP** (cliente).
+Crie um novo projeto no CODESYS.
 
-1. Acesse **Ferramentas → Data sources**.  
-   ![Figura 35 — Tela “Data sources”](img/image39.png)
+![Figura 24](img/image24.png)
+![Figura 25](img/image25.png)
+![Figura 26](img/image26.png)
 
-2. Selecione **Modbus IP** → clique em **(+)** para adicionar.  
-   ![Figura 36 — Novo Data Source Modbus IP](img/image40.png)
+Adicione Ethernet e Modbus TCP Server.
 
-3. Em **Configurações do Data Source**:  
-   - **Name**: identificador do seu data source  
-   - **Host**: `127.0.0.1` (ou o IP do PC/servidor onde roda o CODESYS)  
-   - **Port**: `502`  
-   Salve e **Ative**.  
-   ![Figura 37 — Host 127.0.0.1 e ativação](img/image41.png)
+![Figura 27](img/image27.png)
+![Figura 28](img/image28.png)
+![Figura 29](img/image29.png)
+![Figura 30](img/image30.png)
 
-4. Configure os **Data Points**:
+Inicie o PLC.
+![Figura 31](img/image31.png)
+![Figura 32](img/image32.png)
 
-   **Holding Registers** (ex.: `DP_MV_FIC100A`, `DP_SP_FIC100A`):  
-   - **Add point**  
-   - **Name**: igual ao nome da variável do CODESYS  
-   - **Slave Id**: `1`  
-   - **Faixa do registro**: *Registrador holding*  
-   - **Tipo de dados modbus**: *Inteiro 2 bytes sem sinal*  
-   - **Offset (base 0)**: `0` (para `DP_MV_FIC100A`), `1` (para `DP_SP_FIC100A`)  
-   ![Figura 38 — Data Points Holding Registers](img/image42.png)
+Configure o servidor Modbus.
+![Figura 35](img/image35.png)
 
-   **Input Register** (ex.: `DP_PV_FIC100A`):  
-   - **Faixa do registro**: *Registrador de entrada*  
-   - **Tipo de dados**: *Inteiro 2 bytes sem sinal*  
-   - **Offset (base 0)**: `0`  
-   ![Figura 39 — Data Point Input Register](img/image43.png)
+Mapeie variáveis.
+![Figura 36](img/image36.png)
 
-   **Status do Coil** (ex.: `DP_AM_FIC100A`, `DP_LR_FIC100A`):  
-   - **Faixa do registro**: *Status do coil*  
-   - **Tipo de dados**: *Binário*  
-   - **Offset (base 0)**: `0` (AM) e `1` (LR)  
-   ![Figura 40 — Data Points Status do Coil](img/image44.png)
+Faça download.
+![Figura 37](img/image37.png)
+![Figura 38](img/image38.png)
+
+</details>
 
 ---
 
-### ✅ Observações finais
-- Se a **porta 8080** estiver em uso, altere para uma porta **livre** durante a instalação do SCADA‑LTS e ajuste o link de acesso.  
-- No CODESYS, confirme que o **Gateway** e o **PLC virtual** estão **iniciados** antes do *scan* de rede.  
-- Em firewall/antivírus corporativos, libere **porta 502/TCP** (Modbus) e a porta HTTP do SCADA‑LTS.
+<details open>
+  <summary><strong>🔁 5. MODBUS Client — SCADA‑LTS</strong></summary>
+
+Acesse **Ferramentas → Data Sources**.
+![Figura 39](img/image39.png)
+
+Adicione Modbus IP.
+![Figura 40](img/image40.png)
+
+Configure Host e Porta.
+![Figura 41](img/image41.png)
+
+Crie Data Points.
+![Figura 42](img/image42.png)
+![Figura 43](img/image43.png)
+![Figura 44](img/image44.png)
+
+</details>
 
 ---
+
+<details open>
+  <summary><strong>⚠️ Observações finais</strong></summary>
+
+- Verifique portas 8080 e 502
+- Confirme PLC em execução
+- Ajuste firewall se necessário
+
+</details>
