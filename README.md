@@ -320,131 +320,162 @@ http://localhost:8080/Scada-LTS/
 
 ---
 
-<a id="modbus-server"></a>
 <details>
-  <summary><strong>📡 MODBUS Server — CODESYS</strong></summary>
+  <summary><strong>📡 4. MODBUS Server — CODESYS</strong></summary>
 
-Nesta etapa você irá configurar o CODESYS como **Servidor Modbus TCP**, disponibilizando variáveis para o SCADA‑LTS ler/escrever.
-
-<a id="codesys-passo-1"></a>
-### 🔹 Passo 1 – 
-![fig24](assets\codesys\img1.png)
-
+Neste capítulo será realizada a configuração do **CODESYS como Servidor Modbus TCP**, incluindo criação do projeto, inserção do servidor Modbus, configuração de comunicação, mapeamento de variáveis e inicialização do PLC.
 
 ---
 
-<a id="codesys-passo-2"></a>
-### 🔹 Passo 2 – 
-![fig25](assets\codesys\img2.png)
+### 🔹 Passo 1 – Criar o servidor Modbus no projeto
+![img1](assets/codesys/img1.png)
 
-
----
-
-<a id="codesys-passo-3"></a>
-### 🔹 Passo 3 – 
-![fig26](assets\codesys\img3.png)
-
+1. Na árvore de dispositivos do CODESYS, clique com o botão direito sobre **Ethernet**.
+2. Selecione **Add Device…** para adicionar um novo dispositivo à rede.
 
 ---
 
-<a id="codesys-passo-4"></a>
-### 🔹 Passo 4 – 
-![fig27](assets\codesys\img4.png)
+### 🔹 Passo 2 – Selecionar o Modbus TCP Server
+![img2](assets/codesys/img2.png)
 
-
----
-
-<a id="codesys-passo-5"></a>
-### 🔹 Passo 5 – 
-![fig28](assets\codesys\img5.png)
-
+1. Na lista de dispositivos disponíveis, localize **Modbus TCP Server**.
+2. Selecione o dispositivo.
+3. Clique em **Add Device** para inseri-lo no projeto.
 
 ---
 
-<a id="codesys-passo-6"></a>
-### 🔹 Passo 6 – 
-![fig29](assets\codesys\img6.png)
+### 🔹 Passo 3 – Acessar os parâmetros do Modbus TCP Server
+![img3](assets/codesys/img3.png)
 
-
----
-
-<a id="codesys-passo-7"></a>
-### 🔹 Passo 7 – 
-![fig30](assets\codesys\img7.png)
-
+1. Selecione o **ModbusTCP_Server_Device**.
+2. Acesse a aba de **parâmetros configurados**.
+3. Observe os campos relacionados a registradores e áreas de dados.
 
 ---
 
-<a id="codesys-passo-8"></a>
-### 🔹 Passo 8 – 
-![fig31](assets\codesys\img8.png)
+### 🔹 Passo 4 – Abrir o mapeamento de variáveis do servidor
+![img4](assets/codesys/img4.png)
 
-
----
-
-<a id="codesys-passo-9"></a>
-### 🔹 Passo 9 – 
-![fig32](assets\codesys\img9.png)
-
+1. Clique na opção **ModbusTCPServer I/O Mapping**.
+2. Esta tela será usada para associar variáveis do PLC aos registradores Modbus.
 
 ---
 
-<a id="codesys-passo-10"></a>
-### 🔹 Passo 10 – 
-![fig33](assets\codesys\img10.png)
+### 🔹 Passo 5 – Criar um novo POU (programa)
+![img5](assets/codesys/img5.png)
 
-
----
-
-<a id="codesys-passo-11"></a>
-### 🔹 Passo 11 – 
-![fig34](assets\codesys\img11.png)
-
+1. Clique com o botão direito sobre **Application**.
+2. Selecione **Add Object**.
+3. Escolha a opção **POU** para criar um programa.
 
 ---
 
-<a id="codesys-passo-12"></a>
-### 🔹 Passo 12 – 
-![fig35](assets\codesys\img12.png)
+### 🔹 Passo 6 – Configurar o POU
+![img6](assets/codesys/img6.png)
 
-
----
-
-<a id="codesys-passo-13"></a>
-### 🔹 Passo 13 – 
-![fig36](assets\codesys\img13.png)
-
+1. Defina o nome do POU.
+2. Selecione o tipo **Program**.
+3. Escolha a linguagem **Structured Text (ST)**.
+4. Clique em **Add**.
 
 ---
 
-<a id="codesys-passo-14"></a>
-### 🔹 Passo 14 – 
-![fig37](assets\codesys\img14.png)
+### 🔹 Passo 7 – Programar as variáveis do PLC
+![img7](assets/codesys/img7.png)
 
-
----
-
-<a id="codesys-passo-15"></a>
-### 🔹 Passo 15 – 
-![fig38](assets\codesys\img15.png)
-
-1. Confirme as mensagens de sucesso
-2. Garanta que o PLC permaneça em **RUN**
+1. Insira o código do programa no editor ST.
+2. Defina variáveis que serão utilizadas no mapeamento Modbus.
+3. Salve o programa.
 
 ---
 
-<a id="codesys-passo-16"></a>
-### 🔹 Passo 16 –  
-![fig38](assets\codesys\img16.png)
+### 🔹 Passo 8 – Configurar comunicação do dispositivo
+![img8](assets/codesys/img8.png)
 
+1. Acesse as **Communication Settings** do dispositivo.
+2. Clique em **Scan Network**.
+3. Selecione o controlador encontrado.
+4. Confirme em **OK**.
 
 ---
 
-<a id="codesys-passo-17"></a>
-### 🔹 Passo 17 – 
-![fig38](assets\codesys\img17.png)
+### 🔹 Passo 9 – Iniciar o CODESYS Control Win
+![img9](assets/codesys/img9.png)
 
+1. Na barra de ícones do Windows, localize o **CODESYS Control Win**.
+2. Dê duplo clique para iniciar o controlador virtual.
 
+---
+
+### 🔹 Passo 10 – Abrir o CODESYS Control Win
+![img10](assets/codesys/img10.png)
+
+1. Localize o atalho do **CODESYS Control Win** na área de trabalho.
+2. Execute o controlador para permitir o login do PLC.
+
+---
+
+### 🔹 Passo 11 – Verificar a estrutura do projeto
+![img11](assets/codesys/img11.png)
+
+1. Confira se **Application**, **Ethernet** e **Modbus TCP Server** aparecem corretamente.
+2. Esta estrutura indica que o projeto está pronto para comunicação.
+
+---
+
+### 🔹 Passo 12 – Acessar as configurações de comunicação
+![img12](assets/codesys/img12.png)
+
+1. Abra a tela de **Communication Settings**.
+2. Confirme o controlador selecionado e o status da conexão.
+
+---
+
+### 🔹 Passo 13 – Selecionar o controlador encontrado na rede
+![img13](assets/codesys/img13.png)
+
+1. Selecione o dispositivo encontrado no scan.
+2. Confirme a escolha clicando em **OK**.
+
+---
+
+### 🔹 Passo 14 – Configurar parâmetros do Modbus TCP Server
+![img14](assets/codesys/img14.png)
+
+1. Acesse a aba **General** do Modbus TCP Server.
+2. Configure:
+   - **Unit-ID**
+   - **Porta Modbus (502)**
+3. Confirme os valores conforme a rede do laboratório.
+
+---
+
+### 🔹 Passo 15 – Realizar login no PLC
+![img15](assets/codesys/img15.png)
+
+1. Clique em **Login**.
+2. Em seguida, clique em **Run** para iniciar o PLC.
+
+---
+
+### 🔹 Passo 16 – Criar usuário do dispositivo
+![img16](assets/codesys/img16.png)
+
+1. Ao ser solicitado, escolha **Yes** para ativar o gerenciamento de usuários.
+2. Esta etapa é obrigatória para execução do PLC.
+
+---
+
+### 🔹 Passo 17 – Definir credenciais do usuário
+![img17](assets/codesys/img17.png)
+
+1. Crie um usuário (ex.: `user`).
+2. Defina a senha conforme a política apresentada.
+3. Clique em **OK** para finalizar.
+
+---
+
+Ao final desses passos, o **CODESYS estará operando como Servidor Modbus TCP**, pronto para comunicação com o **SCADA-LTS**.
 
 </details>
 
