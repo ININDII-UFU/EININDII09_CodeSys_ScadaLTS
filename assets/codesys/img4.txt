@@ -1,0 +1,37 @@
+// ================================
+// HOLDING REGISTERS (setpoints do SCADA)
+// ================================
+SPV_DAC
+SPV_W4_20
+SPV_PWM
+
+// ================================
+// INPUT REGISTERS (somente leitura no SCADA)
+// ================================
+SPV_POT1
+SPV_POT2
+SPV_R4_20_C1
+SPV_R4_20_C2
+SPV_ADC1
+SPV_ADC2
+
+// ================================
+// COILS (comandos digitais do SCADA)
+// ================================
+SPV_D2
+SPV_D3
+SPV_D4
+
+// ================================
+// DISCRETE INPUTS (somente leitura no SCADA)
+// ================================
+SPV_RTN1
+SPV_RTN2
+SPV_PUSH1
+SPV_PUSH2
+SPV_D1
+SPV_RELE
+
+
+
+
