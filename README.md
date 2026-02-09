@@ -146,7 +146,10 @@ O **OpenJDK (Java Development Kit)** fornece compilador, JVM e bibliotecas padr√
 ![fig7](assets\instalLTS\img7.png)
 
 1. Clique em **Novo**
-2. Adicione o caminho do JDK (pasta **bin**) que normalmente √©: **C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot\bin**
+2. Adicione o caminho do JDK (pasta **bin**) que normalmente √©:
+```bat
+C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot\bin
+```
 3. Confirme em **OK**
 
 ---
@@ -156,7 +159,10 @@ O **OpenJDK (Java Development Kit)** fornece compilador, JVM e bibliotecas padr√
 ![fig8](assets\instalLTS\img8.png)
 
 1. Verifique se a vari√°vel **JAVA_HOME** foi criada corretamente 
-2. Confirme o caminho apontando para a pasta do JDK: **C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot**
+2. Confirme o caminho apontando para a pasta do JDK: 
+```bat
+C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot
+```
 
 ---
 
