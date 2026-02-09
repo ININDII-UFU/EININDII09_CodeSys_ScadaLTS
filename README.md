@@ -359,6 +359,42 @@ Neste capítulo será realizada a configuração do **CODESYS como Servidor Modb
 1. Clique na opção **ModbusTCPServer I/O Mapping**.
 2. Esta tela será usada para associar variáveis do PLC aos registradores Modbus.
 
+```ST
+// ================================
+// HOLDING REGISTERS (setpoints do SCADA)
+// ================================
+SPV_DAC
+SPV_W4_20
+SPV_PWM
+
+// ================================
+// INPUT REGISTERS (somente leitura no SCADA)
+// ================================
+SPV_POT1
+SPV_POT2
+SPV_R4_20_C1
+SPV_R4_20_C2
+SPV_ADC1
+SPV_ADC2
+
+// ================================
+// COILS (comandos digitais do SCADA)
+// ================================
+SPV_D2
+SPV_D3
+SPV_D4
+
+// ================================
+// DISCRETE INPUTS (somente leitura no SCADA)
+// ================================
+SPV_RTN1
+SPV_RTN2
+SPV_PUSH1
+SPV_PUSH2
+SPV_D1
+SPV_RELE
+```
+
 ---
 
 ### 🔹 Passo 5 – Criar um novo POU (programa)
@@ -386,6 +422,42 @@ Neste capítulo será realizada a configuração do **CODESYS como Servidor Modb
 1. Insira o código do programa no editor ST.
 2. Defina variáveis que serão utilizadas no mapeamento Modbus.
 3. Salve o programa.
+
+```ST
+// ================================
+// HOLDING REGISTERS (setpoints do SCADA)
+// ================================
+DAC   := SPV_DAC;
+W4_20 := SPV_W4_20;
+PWM   := SPV_PWM;
+
+// ================================
+// INPUT REGISTERS (somente leitura no SCADA)
+// ================================
+SPV_POT1      := POT1;
+SPV_POT2      := POT2;
+SPV_R4_20_C1  := R4_20_C1;
+SPV_R4_20_C2  := R4_20_C2;
+SPV_ADC1      := ADC1;
+SPV_ADC2      := ADC2;
+
+// ================================
+// COILS (comandos digitais do SCADA)
+// ================================
+D2       := SPV_D2;
+D3       := SPV_D3;
+D4       := SPV_D4;
+
+// ================================
+// DISCRETE INPUTS (somente leitura no SCADA)
+// ================================
+SPV_RTN1  := RTN1;
+SPV_RTN2  := RTN2;
+SPV_PUSH1 := PUSH1;
+SPV_PUSH2 := PUSH2;
+SPV_D1    := D1;
+SPV_RELE  := RELE;
+```
 
 ---
 
