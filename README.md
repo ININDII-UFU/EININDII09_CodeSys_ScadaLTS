@@ -358,6 +358,7 @@ Neste capítulo será realizada a configuração do **CODESYS como Servidor Modb
 
 1. Clique na opção **ModbusTCPServer I/O Mapping**.
 2. Esta tela será usada para associar variáveis do PLC aos registradores Modbus.
+3. Abaixo vc pode copiar estas variavies e colar no seu devido lugar.
 
 ```ST
 // ================================
