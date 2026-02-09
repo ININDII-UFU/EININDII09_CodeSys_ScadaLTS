@@ -80,7 +80,7 @@ A cada um(a), nosso agradecimento pelo compromisso, pela parceria e pela qualida
   <summary><strong>☕ Instalação do OpenJDK</strong></summary>
 
 Para realizar a instalação do OpenJDK, utilize o link oficial (Microsoft Build of OpenJDK):  
-🔗 **Download:** https://aka.ms/download-jdk/microsoft
+🔗 **Download:** https://learn.microsoft.com/en-us/java/openjdk/download
 
 O **OpenJDK (Java Development Kit)** fornece compilador, JVM e bibliotecas padrão para desenvolvimento/execução de aplicações Java.
 
@@ -146,7 +146,7 @@ O **OpenJDK (Java Development Kit)** fornece compilador, JVM e bibliotecas padr�
 ![fig7](assets\instalLTS\img7.png)
 
 1. Clique em **Novo**
-2. Adicione o caminho do JDK (pasta **bin**)
+2. Adicione o caminho do JDK (pasta **bin**) que normalmente é: **C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot\bin**
 3. Confirme em **OK**
 
 ---
@@ -155,8 +155,8 @@ O **OpenJDK (Java Development Kit)** fornece compilador, JVM e bibliotecas padr�
 ### 🔹 Passo 8 – Conferir/confirmar JAVA_HOME
 ![fig8](assets\instalLTS\img8.png)
 
-1. Verifique se a variável **JAVA_HOME** foi criada corretamente
-2. Confirme o caminho apontando para a pasta do JDK
+1. Verifique se a variável **JAVA_HOME** foi criada corretamente 
+2. Confirme o caminho apontando para a pasta do JDK: **C:\Program Files\Microsoft\jdk-25.0.2.10-hotspot**
 
 ---
 
