@@ -576,7 +576,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-1"></a>
 ### 🔹 Passo 1 – Abrir Data Sources
-![fig41](assets\configLTS\img1.png)
+![fig41](assets\configlts\img1.png)
 
 1. No SCADA‑LTS, vá em **Ferramentas → Data Sources**
 2. Clique para adicionar uma nova fonte de dados
@@ -585,7 +585,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-2"></a>
 ### 🔹 Passo 2 – Selecionar “Modbus IP”
-![fig42](assets\configLTS\img2.png)
+![fig42](assets\configlts\img2.png)
 
 1. No tipo de Data Source, selecione **Modbus IP**
 2. Confirme para criar a fonte
@@ -594,7 +594,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-3"></a>
 ### 🔹 Passo 3 – Configurar Host e Porta
-![fig43](assets\configLTS\img3.png)
+![fig43](assets\configlts\img3.png)
 
 1. Em **Host**, coloque o IP do servidor (ex.: `localhost` ou IP do PC/PLC)
 2. Em **Port**, coloque a porta Modbus (padrão **502**)
@@ -604,7 +604,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-4"></a>
 ### 🔹 Passo 4 – Criar Data Point (tela 1)
-![fig44](assets\configLTS\img4.png)
+![fig44](assets\configlts\img4.png)
 
 1. Dentro do Data Source criado, clique em **Add Data Point**
 2. Defina nome e tipo do ponto (conforme o registrador)
@@ -613,7 +613,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-5"></a>
 ### 🔹 Passo 5 – Criar Data Point (tela 2)
-![fig45](assets\configLTS\img5.png)
+![fig45](assets\configlts\img5.png)
 
 1. Configure endereço, função e demais parâmetros
 2. Salve o Data Point
@@ -622,7 +622,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-6"></a>
 ### 🔹 Passo 6 – Validar Data Points (tela final)
-![fig46](assets\configLTS\img6.png)
+![fig46](assets\configlts\img6.png)
 
 1. Confirme os Data Points criados
 2. Verifique status de conexão e leitura/escrita
