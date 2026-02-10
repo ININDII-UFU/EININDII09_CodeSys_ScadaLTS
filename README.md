@@ -342,7 +342,7 @@ Neste capítulo será realizada a configuração do **CODESYS como Servidor Modb
 ---
 
 ### 🔹 Passo 1 – Criar o servidor Modbus no projeto
-![img1](assets/codesys/img1.png)
+![fig24](assets/codesys/img1.png)
 
 1. Na árvore de dispositivos do CODESYS, clique com o botão direito sobre **Ethernet**.
 2. Selecione **Add Device…** para adicionar um novo dispositivo à rede.
@@ -350,7 +350,7 @@ Neste capítulo será realizada a configuração do **CODESYS como Servidor Modb
 ---
 
 ### 🔹 Passo 2 – Selecionar o Modbus TCP Server
-![img2](assets/codesys/img2.png)
+![fig25](assets/codesys/img2.png)
 
 1. Na lista de dispositivos disponíveis, localize **Modbus TCP Server**.
 2. Selecione o dispositivo.
@@ -359,7 +359,7 @@ Neste capítulo será realizada a configuração do **CODESYS como Servidor Modb
 ---
 
 ### 🔹 Passo 3 – Acessar os parâmetros do Modbus TCP Server
-![img3](assets/codesys/img3.png)
+![fig26](assets/codesys/img3.png)
 
 1. Selecione o **ModbusTCP_Server_Device**.
 2. Acesse a aba de **parâmetros configurados**.
@@ -368,7 +368,7 @@ Neste capítulo será realizada a configuração do **CODESYS como Servidor Modb
 ---
 
 ### 🔹 Passo 4 – Abrir o mapeamento de variáveis do servidor
-![img4](assets/codesys/img4.png)
+![fig27](assets/codesys/img4.png)
 
 1. Clique na opção **ModbusTCPServer I/O Mapping**.
 2. Esta tela será usada para associar variáveis do PLC aos registradores Modbus.
@@ -413,7 +413,7 @@ SPV_RELE
 ---
 
 ### 🔹 Passo 5 – Criar um novo POU (programa)
-![img5](assets/codesys/img5.png)
+![fig28](assets/codesys/img5.png)
 
 1. Clique com o botão direito sobre **Application**.
 2. Selecione **Add Object**.
@@ -422,7 +422,7 @@ SPV_RELE
 ---
 
 ### 🔹 Passo 6 – Configurar o POU
-![img6](assets/codesys/img6.png)
+![fig29](assets/codesys/img6.png)
 
 1. Defina o nome do POU.
 2. Selecione o tipo **Program**.
@@ -432,7 +432,7 @@ SPV_RELE
 ---
 
 ### 🔹 Passo 7 – Programar as variáveis do PLC
-![img7](assets/codesys/img7.png)
+![fig30](assets/codesys/img7.png)
 
 1. Insira o código do programa no editor ST.
 2. Defina variáveis que serão utilizadas no mapeamento Modbus.
@@ -477,7 +477,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 8 – Configurar comunicação do dispositivo
-![img8](assets/codesys/img8.png)
+![fig31](assets/codesys/img8.png)
 
 1. Acesse as **Communication Settings** do dispositivo.
 2. Clique em **Scan Network**.
@@ -487,7 +487,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 9 – Iniciar o CODESYS Control Win
-![img9](assets/codesys/img9.png)
+![fig32](assets/codesys/img9.png)
 
 1. Na barra de ícones do Windows, localize o **CODESYS Control Win**.
 2. Dê duplo clique para iniciar o controlador virtual.
@@ -495,7 +495,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 10 – Abrir o CODESYS Control Win
-![img10](assets/codesys/img10.png)
+![fig33](assets/codesys/img10.png)
 
 1. Localize o atalho do **CODESYS Control Win** na área de trabalho.
 2. Execute o controlador para permitir o login do PLC.
@@ -503,7 +503,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 11 – Verificar a estrutura do projeto
-![img11](assets/codesys/img11.png)
+![fig34](assets/codesys/img11.png)
 
 1. Confira se **Application**, **Ethernet** e **Modbus TCP Server** aparecem corretamente.
 2. Esta estrutura indica que o projeto está pronto para comunicação.
@@ -511,7 +511,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 12 – Acessar as configurações de comunicação
-![img12](assets/codesys/img12.png)
+![fig35](assets/codesys/img12.png)
 
 1. Abra a tela de **Communication Settings**.
 2. Confirme o controlador selecionado e o status da conexão.
@@ -519,7 +519,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 13 – Selecionar o controlador encontrado na rede
-![img13](assets/codesys/img13.png)
+![fig36](assets/codesys/img13.png)
 
 1. Selecione o dispositivo encontrado no scan.
 2. Confirme a escolha clicando em **OK**.
@@ -527,7 +527,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 14 – Configurar parâmetros do Modbus TCP Server
-![img14](assets/codesys/img14.png)
+![fig37](assets/codesys/img14.png)
 
 1. Acesse a aba **General** do Modbus TCP Server.
 2. Configure:
@@ -538,7 +538,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 15 – Realizar login no PLC
-![img15](assets/codesys/img15.png)
+![fig38](assets/codesys/img15.png)
 
 1. Clique em **Login**.
 2. Em seguida, clique em **Run** para iniciar o PLC.
@@ -546,7 +546,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 16 – Criar usuário do dispositivo
-![img16](assets/codesys/img16.png)
+![fig39](assets/codesys/img16.png)
 
 1. Ao ser solicitado, escolha **Yes** para ativar o gerenciamento de usuários.
 2. Esta etapa é obrigatória para execução do PLC.
@@ -554,7 +554,7 @@ SPV_RELE  := RELE;
 ---
 
 ### 🔹 Passo 17 – Definir credenciais do usuário
-![img17](assets/codesys/img17.png)
+![fig40](assets/codesys/img17.png)
 
 1. Crie um usuário (ex.: `user`).
 2. Defina a senha conforme a política apresentada.
@@ -576,7 +576,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-1"></a>
 ### 🔹 Passo 1 – Abrir Data Sources
-![fig39](assets\configLTS\img1.png)
+![fig41](assets\configLTS\img1.png)
 
 1. No SCADA‑LTS, vá em **Ferramentas → Data Sources**
 2. Clique para adicionar uma nova fonte de dados
@@ -585,7 +585,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-2"></a>
 ### 🔹 Passo 2 – Selecionar “Modbus IP”
-![fig40](assets\configLTS\img2.png)
+![fig42](assets\configLTS\img2.png)
 
 1. No tipo de Data Source, selecione **Modbus IP**
 2. Confirme para criar a fonte
@@ -594,7 +594,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-3"></a>
 ### 🔹 Passo 3 – Configurar Host e Porta
-![fig41](assets\configLTS\img3.png)
+![fig43](assets\configLTS\img3.png)
 
 1. Em **Host**, coloque o IP do servidor (ex.: `localhost` ou IP do PC/PLC)
 2. Em **Port**, coloque a porta Modbus (padrão **502**)
@@ -604,7 +604,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-4"></a>
 ### 🔹 Passo 4 – Criar Data Point (tela 1)
-![fig42](assets\configLTS\img4.png)
+![fig44](assets\configLTS\img4.png)
 
 1. Dentro do Data Source criado, clique em **Add Data Point**
 2. Defina nome e tipo do ponto (conforme o registrador)
@@ -613,7 +613,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-5"></a>
 ### 🔹 Passo 5 – Criar Data Point (tela 2)
-![fig43](assets\configLTS\img5.png)
+![fig45](assets\configLTS\img5.png)
 
 1. Configure endereço, função e demais parâmetros
 2. Salve o Data Point
@@ -622,7 +622,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-6"></a>
 ### 🔹 Passo 6 – Validar Data Points (tela final)
-![fig44](assets\configLTS\img6.png)
+![fig46](assets\configLTS\img6.png)
 
 1. Confirme os Data Points criados
 2. Verifique status de conexão e leitura/escrita
