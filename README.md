@@ -104,6 +104,14 @@ O **OpenJDK (Java Development Kit)** fornece compilador, JVM e bibliotecas padr�
 
 ---
 
+<a id="openjdk-passo-2"></a>
+### 🔹 Passo 2b – Instalar para todo so Usuarios
+![fig2b](assets\instalLTS\img2b.png)
+1. Deixe no padrão que é instalar para todos os usuarios.
+2. Clique em **Next** para continuar
+
+---
+
 <a id="openjdk-passo-3"></a>
 ### 🔹 Passo 3 – Configurar “JAVA_HOME”
 ![fig3](assets\instalLTS\img3.png)
