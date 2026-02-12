@@ -579,6 +579,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ![fig41](assets/configlts/img1.png)
 
 1️⃣ No SCADA‑LTS, vá em **Ferramentas → Data Sources**
+
 2️⃣ Clique para adicionar uma nova fonte de dados
 
 ---
@@ -588,6 +589,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ![fig42](assets/configlts/img2.png)
 
 1️⃣ No tipo de Data Source, selecione **Modbus IP**
+
 2️⃣ Confirme para criar a fonte
 
 ---
@@ -597,7 +599,9 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ![fig43](assets/configlts/img3.png)
 
 1️⃣ Em **Host**, coloque o IP do servidor (ex.: `localhost` ou IP do PC/PLC)
+
 2️⃣ Em **Port**, coloque a porta Modbus (padrão **502**)
+
 3️⃣ Salve a configuração
 
 ---
@@ -607,6 +611,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ![fig44](assets/configlts/img4.png)
 
 1️⃣ Dentro do Data Source criado, clique em **Add Data Point**
+
 2️⃣ Defina nome e tipo do ponto (conforme o registrador)
 
 ---
@@ -616,6 +621,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ![fig45](assets/configlts/img5.png)
 
 1️⃣ Configure endereço, função e demais parâmetros
+
 2️⃣ Salve o Data Point
 
 ---
@@ -625,6 +631,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ![fig46](assets/configlts/img6.png)
 
 1️⃣ Confirme os Data Points criados
+
 2️⃣ Verifique status de conexão e leitura/escrita
 
 ```ST
@@ -679,7 +686,9 @@ ID - TAG
 ![fig47](assets/configlts/img7.png)
 
 1️⃣ Clique no ícone Editar representação gráfica (ícone do mouse na barra superior).
+
 2️⃣ A tela entrará no modo de edição (bordas verdes visíveis).
+
 3️⃣ Confirme que o nome da view (ex: ctrNivel) está correto no topo.
 
 ---
@@ -689,14 +698,17 @@ ID - TAG
 ![fig48](assets/configlts/img8.png)
 
 1️⃣ Clique no ícone Propriedades da visualização (ícone indicado na imagem).
+
 2️⃣ Será aberta a janela Visualizar propriedades.
+
 3️⃣ Verifique ou ajuste:
 
-Nome
+      Nome
 
-Export ID (XID)
+      Export ID (XID)
 
-Imagem de fundo (se aplicável)
+      Imagem de fundo (se aplicável)
+
 4️⃣ Clique em Salvar para confirmar alterações.
 
 ---
@@ -706,7 +718,9 @@ Imagem de fundo (se aplicável)
 ![fig49](assets/configlts/img9.png)
 
 1️⃣ Clique sobre o componente gráfico desejado (ex: indicador do processo).
+
 2️⃣ Clique no ícone Editar configurações de componente de data point.
+
 3️⃣ A janela de configuração será aberta para edição do vínculo com o Data Point.
 
 ---
@@ -716,19 +730,21 @@ Imagem de fundo (se aplicável)
 ![fig50](assets/configlts/img10.png)
 
 1️⃣ Na janela Data point simples, selecione o Data Point no campo superior.
+
 2️⃣ Configure conforme necessário:
 
-Sobrescrever nome (opcional)
+     Sobrescrever nome (opcional)
 
-Marcar Configurável se quiser permitir escrita
+     Marcar Configurável se quiser permitir escrita
 
-Ajustar Cor de fundo
+     Ajustar Cor de fundo
 
-Habilitar Exibir controles se for ponto de escrita
+     Habilitar Exibir controles se for ponto de escrita
 
-Ajustar Position X / Y se necessário
+     Ajustar Position X / Y se necessário
 
 3️⃣ Clique no ícone ✔ (Salvar) no canto superior direito.
+
 4️⃣ Feche a janela (❌).
 
 ---
