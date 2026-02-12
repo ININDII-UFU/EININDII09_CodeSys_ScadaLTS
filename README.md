@@ -576,7 +576,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-1"></a>
 ### 🔹 Passo 1 – Abrir Data Sources
-![fig41](assets/configlts/img1.png)
+![fig41](assets/configLTS/img1.png)
 
 1️⃣ No SCADA‑LTS, vá em **Ferramentas → Data Sources**
 
@@ -586,7 +586,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-2"></a>
 ### 🔹 Passo 2 – Selecionar “Modbus IP”
-![fig42](assets/configlts/img2.png)
+![fig42](assets/configLTS/img2.png)
 
 1️⃣ No tipo de Data Source, selecione **Modbus IP**
 
@@ -596,7 +596,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-3"></a>
 ### 🔹 Passo 3 – Configurar Host e Porta
-![fig43](assets/configlts/img3.png)
+![fig43](assets/configLTS/img3.png)
 
 1️⃣ Em **Host**, coloque o IP do servidor (ex.: `localhost` ou IP do PC/PLC)
 
@@ -608,7 +608,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-4"></a>
 ### 🔹 Passo 4 – Criar Data Point (tela 1)
-![fig44](assets/configlts/img4.png)
+![fig44](assets/configLTS/img4.png)
 
 1️⃣ Dentro do Data Source criado, clique em **Add Data Point**
 
@@ -618,7 +618,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-5"></a>
 ### 🔹 Passo 5 – Criar Data Point (tela 2)
-![fig45](assets/configlts/img5.png)
+![fig45](assets/configLTS/img5.png)
 
 1️⃣ Configure endereço, função e demais parâmetros
 
@@ -628,7 +628,7 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 
 <a id="scada-client-passo-6"></a>
 ### 🔹 Passo 6 – Validar Data Points (tela final)
-![fig46](assets/configlts/img6.png)
+![fig46](assets/configLTS/img6.png)
 
 1️⃣ Confirme os Data Points criados
 
@@ -683,7 +683,7 @@ ID - TAG
 
 <a id="scada-client-passo-6"></a>
 ### 🔹 Passo 7 –
-![fig47](assets/configlts/img7.png)
+![fig47](assets/configLTS/img7.png)
 
 1️⃣ Clique no ícone Editar representação gráfica (ícone do mouse na barra superior).
 
@@ -695,7 +695,7 @@ ID - TAG
 
 <a id="scada-client-passo-6"></a>
 ### 🔹 Passo 8 –
-![fig48](assets/configlts/img8.png)
+![fig48](assets/configLTS/img8.png)
 
 1️⃣ Clique no ícone Propriedades da visualização (ícone indicado na imagem).
 
@@ -715,7 +715,7 @@ ID - TAG
 
 <a id="scada-client-passo-6"></a>
 ### 🔹 Passo 9 –
-![fig49](assets/configlts/img9.png)
+![fig49](assets/configLTS/img9.png)
 
 1️⃣ Clique sobre o componente gráfico desejado (ex: indicador do processo).
 
@@ -727,7 +727,7 @@ ID - TAG
 
 <a id="scada-client-passo-6"></a>
 ### 🔹 Passo 10 –
-![fig50](assets/configlts/img10.png)
+![fig50](assets/configLTS/img10.png)
 
 1️⃣ Na janela Data point simples, selecione o Data Point no campo superior.
 
