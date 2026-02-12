@@ -578,8 +578,8 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ### 🔹 Passo 1 – Abrir Data Sources
 ![fig41](assets/configlts/img1.png)
 
-1. No SCADA‑LTS, vá em **Ferramentas → Data Sources**
-2. Clique para adicionar uma nova fonte de dados
+1️⃣ No SCADA‑LTS, vá em **Ferramentas → Data Sources**
+2️⃣ Clique para adicionar uma nova fonte de dados
 
 ---
 
@@ -587,8 +587,8 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ### 🔹 Passo 2 – Selecionar “Modbus IP”
 ![fig42](assets/configlts/img2.png)
 
-1. No tipo de Data Source, selecione **Modbus IP**
-2. Confirme para criar a fonte
+1️⃣ No tipo de Data Source, selecione **Modbus IP**
+2️⃣ Confirme para criar a fonte
 
 ---
 
@@ -596,9 +596,9 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ### 🔹 Passo 3 – Configurar Host e Porta
 ![fig43](assets/configlts/img3.png)
 
-1. Em **Host**, coloque o IP do servidor (ex.: `localhost` ou IP do PC/PLC)
-2. Em **Port**, coloque a porta Modbus (padrão **502**)
-3. Salve a configuração
+1️⃣ Em **Host**, coloque o IP do servidor (ex.: `localhost` ou IP do PC/PLC)
+2️⃣ Em **Port**, coloque a porta Modbus (padrão **502**)
+3️⃣ Salve a configuração
 
 ---
 
@@ -606,8 +606,8 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ### 🔹 Passo 4 – Criar Data Point (tela 1)
 ![fig44](assets/configlts/img4.png)
 
-1. Dentro do Data Source criado, clique em **Add Data Point**
-2. Defina nome e tipo do ponto (conforme o registrador)
+1️⃣ Dentro do Data Source criado, clique em **Add Data Point**
+2️⃣ Defina nome e tipo do ponto (conforme o registrador)
 
 ---
 
@@ -615,8 +615,8 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ### 🔹 Passo 5 – Criar Data Point (tela 2)
 ![fig45](assets/configlts/img5.png)
 
-1. Configure endereço, função e demais parâmetros
-2. Salve o Data Point
+1️⃣ Configure endereço, função e demais parâmetros
+2️⃣ Salve o Data Point
 
 ---
 
@@ -624,8 +624,8 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 ### 🔹 Passo 6 – Validar Data Points (tela final)
 ![fig46](assets/configlts/img6.png)
 
-1. Confirme os Data Points criados
-2. Verifique status de conexão e leitura/escrita
+1️⃣ Confirme os Data Points criados
+2️⃣ Verifique status de conexão e leitura/escrita
 
 ```ST
 // ================================
@@ -678,8 +678,9 @@ ID - TAG
 ### 🔹 Passo 7 –
 ![fig47](assets/configlts/img7.png)
 
-1. 
-2. 
+1️⃣ Clique no ícone Editar representação gráfica (ícone do mouse na barra superior).
+2️⃣ A tela entrará no modo de edição (bordas verdes visíveis).
+3️⃣ Confirme que o nome da view (ex: ctrNivel) está correto no topo.
 
 ---
 
@@ -687,8 +688,16 @@ ID - TAG
 ### 🔹 Passo 8 –
 ![fig48](assets/configlts/img8.png)
 
-1. 
-2. 
+1️⃣ Clique no ícone Propriedades da visualização (ícone indicado na imagem).
+2️⃣ Será aberta a janela Visualizar propriedades.
+3️⃣ Verifique ou ajuste:
+
+Nome
+
+Export ID (XID)
+
+Imagem de fundo (se aplicável)
+4️⃣ Clique em Salvar para confirmar alterações.
 
 ---
 
@@ -696,8 +705,9 @@ ID - TAG
 ### 🔹 Passo 9 –
 ![fig49](assets/configlts/img9.png)
 
-1. 
-2. 
+1️⃣ Clique sobre o componente gráfico desejado (ex: indicador do processo).
+2️⃣ Clique no ícone Editar configurações de componente de data point.
+3️⃣ A janela de configuração será aberta para edição do vínculo com o Data Point.
 
 ---
 
@@ -705,8 +715,21 @@ ID - TAG
 ### 🔹 Passo 10 –
 ![fig50](assets/configlts/img10.png)
 
-1. 
-2. 
+1️⃣ Na janela Data point simples, selecione o Data Point no campo superior.
+2️⃣ Configure conforme necessário:
+
+Sobrescrever nome (opcional)
+
+Marcar Configurável se quiser permitir escrita
+
+Ajustar Cor de fundo
+
+Habilitar Exibir controles se for ponto de escrita
+
+Ajustar Position X / Y se necessário
+
+3️⃣ Clique no ícone ✔ (Salvar) no canto superior direito.
+4️⃣ Feche a janela (❌).
 
 ---
 
