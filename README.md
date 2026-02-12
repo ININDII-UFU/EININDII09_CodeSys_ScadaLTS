@@ -627,6 +627,89 @@ Aqui você irá configurar o SCADA‑LTS para **conectar no servidor Modbus (COD
 1. Confirme os Data Points criados
 2. Verifique status de conexão e leitura/escrita
 
+```ST
+// ================================
+// HOLDING REGISTERS (setpoints do SCADA)
+// ================================
+ID - TAG
+
+0  - SPV_DAC
+1  - SPV_W4_20
+2  - SPV_PWM
+
+// ================================
+// INPUT REGISTERS (somente leitura no SCADA)
+// ================================
+ID - TAG
+
+0  - SPV_POT1
+1  - SPV_POT2
+2  - SPV_R4_20_C1
+3  - SPV_R4_20_C2
+4  - SPV_ADC1
+5  - SPV_ADC2
+
+// ================================
+// COILS (comandos digitais do SCADA)
+// ================================
+ID - TAG
+
+0  - SPV_D2
+1  - SPV_D3
+2  - SPV_D4
+
+// ================================
+// DISCRETE INPUTS (somente leitura no SCADA)
+// ================================
+ID - TAG
+
+0  - SPV_RTN1
+1  - SPV_RTN2
+2  - SPV_PUSH1
+3  - SPV_PUSH2
+4  - SPV_D1
+5  - SPV_RELE
+
+```
+
+---
+
+<a id="scada-client-passo-6"></a>
+### 🔹 Passo 7 –
+![fig47](assets/configlts/img7.png)
+
+1. 
+2. 
+
+---
+
+<a id="scada-client-passo-6"></a>
+### 🔹 Passo 8 –
+![fig48](assets/configlts/img8.png)
+
+1. 
+2. 
+
+---
+
+<a id="scada-client-passo-6"></a>
+### 🔹 Passo 9 –
+![fig49](assets/configlts/img9.png)
+
+1. 
+2. 
+
+---
+
+<a id="scada-client-passo-6"></a>
+### 🔹 Passo 10 –
+![fig50](assets/configlts/img10.png)
+
+1. 
+2. 
+
+---
+
 </details>
 
 ---
